@@ -1,0 +1,208 @@
+.services{
+  width: 192rem;
+
+  @include respond(phone){
+    width: 60rem;
+    margin: 0 auto;
+  }
+
+  @include respond(port){
+    width: 90rem;
+    margin: 0 auto;
+  }
+
+  @include respond(land){
+    width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__inner{
+    display: block;
+    width: 32rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+
+    @include respond(phone){
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__title{
+    display: block;
+    width: 42rem;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+
+    @include respond(phone){
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    @include respond(port){
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+  }
+
+  &__group{
+    width: 120.4rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+  }
+
+  &__box{
+    display: block;
+    width: 34rem;
+    padding-top: 10.8rem;
+    padding-left: 5.2rem;
+    padding-bottom: 7.3rem;
+    box-shadow: 0px 3px 11px rgba(3, 74, 62, 0.56);
+    border-radius: 27px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    &::before{
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 16rem solid #017B65;
+      border-left: 16rem solid transparent;
+      border-right: 0;
+      border-bottom: 0;
+      position: absolute;
+      top: 0rem;
+      left: 18rem;
+    }
+
+    &::after{
+      content: "";
+      width: 53px;
+      height: 53px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 2rem;
+      left: 27rem;
+    }
+
+    &_1::after{
+      background-image: url(../img/icon5.png);
+    }
+
+    &_2::after{
+      background-image: url(../img/icon6.png);
+    }
+
+    &_3::after{
+      background-image: url(../img/icon7.png);
+    }
+
+    &-title{
+      display: block;
+      width: 27.6rem;
+      margin-bottom: 5rem;
+    }
+
+    &-text{
+      display: block;
+      width: 24.3rem;
+      margin-bottom: 3.6rem;
+    }
+
+    &-btn{
+      display: block;
+      width: 24rem;
+      text-align: center;
+      position: relative;
+
+      &::before{
+        content: "";
+        width: 36px;
+        height: 28px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/icon3.png);
+        position: absolute;
+        top: -.3rem;
+        left: 0rem;
+      }
+
+      &::after{
+        content: "";
+        width: 41px;
+        height: 11px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/icon4.png);
+        position: absolute;
+        top: .5rem;
+        left: 20rem;
+      }
+
+      a{
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}

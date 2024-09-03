@@ -1,0 +1,88 @@
+.skill{
+  width: 192rem;
+
+  &__inner{
+    display: block;
+    width: 145rem;
+    margin: 0 auto;
+  }
+
+  &__title{
+    display: block;
+    width: 22.4rem;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+  }
+
+  &__group{
+    width: 145rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__box{
+    display: block;
+    width: 30.6rem;
+    margin: 0 auto;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    &-title{
+      display: block;
+      width: 20rem;
+      margin-bottom: .7rem;
+      text-align: left;
+    }
+
+    &-text{
+      display: block;
+      width: 30.6rem;
+      text-align: left;
+    }
+  }
+
+  &__img{
+    display: block;
+    width: 30.6rem;
+    margin-bottom: 2.9rem;
+  }
+}

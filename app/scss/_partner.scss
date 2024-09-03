@@ -1,0 +1,67 @@
+.partner{
+  width: 192rem;
+
+  &__inner{
+    display: block;
+    width: 145rem;
+    margin: 0 auto;
+    margin-bottom: 11rem;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__title{
+    display: block;
+    margin-bottom: 8.5rem;
+  }
+
+  &__group{
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond(phone){
+      width: 32rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__img{
+    display: block;
+    max-width: 10rem;
+    max-height: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 8rem;
+  }
+}

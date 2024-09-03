@@ -1,0 +1,31 @@
+.tehnology{
+  width: 192rem;
+
+  &__inner{
+    width: 192rem;
+    margin: 0 auto;
+  }
+
+  &__title{
+    display: block;
+    width: 62.9rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
+
+  &__group{
+    width: 130rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__img{
+    display: block;
+    max-width: 12rem;;
+    height: 12rem;
+    margin-right: 4rem;
+    margin-bottom: 8rem;
+  }
+}
